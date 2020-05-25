@@ -14,11 +14,11 @@ class UserDataManager {
            delay(3000)
            return@async
        }
-       return count+delay
+       return count+delay.await()
     }
 }
 
-private operator fun Number.plus(delay: Deferred<Unit>): Int {
+private operator fun Number.plus(await: Unit): Int {
     return 70
 }
 
