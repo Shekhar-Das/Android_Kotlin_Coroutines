@@ -50,6 +50,44 @@
         app:layout_constraintTop_toBottomOf="@id/tvCount"
         />
 
+    <TextView
+        android:id="@+id/tvShowStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show status here"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCount"
+        />
+
+    <Button
+        android:id="@+id/btnCheckStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Status"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvShowStatus"
+        />
+
+    <Button
+        android:id="@+id/btnCancelJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Job"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCheckStatus"
+        />
+
 
 
 
