@@ -58,8 +58,10 @@ class MainActivity : AppCompatActivity() {
 
         btnDownloadUserData.setOnClickListener {
             //may the screen will be fezzes up
-            CoroutineScope(Dispatchers.IO).launch {
-                downloadUserData()
+            CoroutineScope(Dispatchers.Main).launch {
+               // downloadUserData()
+                tvUserMessage.text = UserDataManager().getTotalUserCount().toString()
+
             }
         }
     }
